@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.repertoire_archive">
    <application
-        android:label="repertoire_archive"
+        android:label="Repertoire archive"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
