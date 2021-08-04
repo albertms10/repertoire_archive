@@ -90,7 +90,7 @@ jobs:
 
       - if: ${{ github.event_name == 'push' }}
         name: 'Tar app'
-        run: cd build/macos/Build/Products/Release/ && tar -cvjf macos_release.tar.bz2 "Cabin Booking.app"
+        run: cd build/macos/Build/Products/Release/ && tar -cvjf macos_release.tar.bz2 "Repertoire archive.app"
 
       - if: ${{ github.event_name == 'push' }}
         uses: actions/upload-artifact@v2
@@ -103,7 +103,7 @@ jobs:
     name: Windows build
     runs-on: windows-latest
     needs: [analyze]
-    if: ${{ github.event.pull_request.draft == false }}
+    if: ${{ false }} # ${{ github.event.pull_request.draft == false }}
 
     steps:
       - uses: actions/checkout@v2
